@@ -4,9 +4,9 @@
   "description": "This is the blog website for the optometry",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --exec babel-node src/app.js",
+    "start": "nodemon --exec babel-node src/server.js",
     "build": "babel src --out-dir dist",
-    "serve": "node dist/app.js"
+    "serve": "node dist/server.js"
   },
   "author": "",
   "license": "ISC",
