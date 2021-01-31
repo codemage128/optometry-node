@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "This is the blog website for the optometry",
   "main": "index.js",
+  "engines": {
+    "node": "12.11.1"
+  },
   "scripts": {
     "build": "babel src --out-dir dist",
     "serve": "node dist/server.js"
