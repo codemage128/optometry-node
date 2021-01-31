@@ -2,7 +2,7 @@
   "name": "optometry",
   "version": "1.0.0",
   "description": "This is the blog website for the optometry",
-  "main": "index.js",
+  "main": "server.js",
   "engines": {
     "node": "12.11.1"
   },
