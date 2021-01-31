@@ -42,10 +42,8 @@
 </head>
 
 <body>
-
    <!-- page wrapper -->
    <div class="page-wrapper">
-
       <!-- Header Main Area -->
       <header class="site-header header-style-1">
          <div class="pre-header">
@@ -77,68 +75,69 @@
          </div>
          <div class="site-header-menu">
             <div class="container">
-               <div class="row">
-                  <div class="col-md-12">
-                     <div class="d-flex align-items-center">
-                        <div class="site-branding flex-grow-1">
-                           <a href="/">
-                              <img class="logo-img" alt="optico" src="images/logo-dark.png">
-                           </a>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="d-flex align-items-center">
+                            <div class="site-branding flex-grow-1">
+                                <a href="">
+                                    <img class="logo-img" alt="optico"
+                                         src="/images/logo-dark.png">
+                                </a>
+                            </div>
+                            <div class="site-navigation ml-auto">
+                                <nav class="main-menu navbar-expand-xl navbar-light">
+                                    <div class="navbar-header">
+                                        <!-- Togg le Button -->
+                                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                                data-target="#navbarSupportedContent"
+                                                aria-controls="navbarSupportedContent" aria-expanded="false"
+                                                aria-label="Toggle navigation">
+                                            <span class="fa fa-bars"></span>
+                                        </button>
+                                    </div>
+                                    <div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
+                                        <ul class="navigation clearfix">
+                                            <li class=""><a
+                                                    href="">Home</a>
+                                            </li>
+                                            <li class="dropdown ">
+                                                <a href="#">Blogs</a>
+                                                <ul>
+                                                    <li><a href="">Optometry</a></li>
+                                                    <li><a href="">Opticianry</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="">
+                                                <a href="">Courses</a>
+                                            </li>
+                                            <li class="dropdown ">
+                                                <a href="">Services</a>
+                                                <ul>
+                                                    <li><a href="#">About</a></li>
+                                                    <li><a href="#">Study Tips</a></li>
+                                                    <li><a href="#">Visual Acuity Chart</a></li>
+                                                    <li><a href="#">Treatments</a></li>
+                                                    <li><a href="#">Our Doctors</a></li>
+                                                    <li><a href="#">Doctor Single</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="">
+                                                <a href="">Contact</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="menu-right-box d-flex align-items-center">
+                                <a href="#" class="search-btn"><i class="optico-icon-search-1"></i></a>
+                                <div class="header-button">
+                                    <a href="/dashboard" class="btn btn-outline">APPOINTMENT</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="site-navigation ml-auto">
-                           <nav class="main-menu navbar-expand-xl navbar-light">
-                              <div class="navbar-header">
-                                 <!-- Togg le Button -->
-                                 <button class="navbar-toggler" type="button" data-toggle="collapse"
-                                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                    aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="fa fa-bars"></span>
-                                 </button>
-                              </div>
-                              <div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
-                                 <ul class="navigation clearfix">
-                                    <li class="{{ Request::is('/') ? 'active' : '' }}"><a
-                                          href="{{ route('index') }}">Home</a>
-                                    </li>
-                                    <li class="dropdown {{ Request::is('contact') ? 'active' : '' }}">
-                                       <a href="{{ route('contact') }}">Blogs</a>
-                                       <ul>
-                                          <li><a href="{{ route('about') }}">Optometry</a></li>
-                                          <li><a href="{{ route('treatments') }} ">Opticianry</a></li>
-                                       </ul>
-                                    </li>
-                                    <li class="{{ Request::is('contact') ? 'active' : '' }}">
-                                       <a href="{{ route('contact') }}">Courses</a>
-                                    </li>
-                                    <li
-                                       class="dropdown {{ Request::is('about') || Request::is('treatments') || Request::is('our-doctors') || Request::is('doctor-single') ? 'active' : '' }}">
-                                       <a href="{{ route('about') }}">Services</a>
-                                       <ul>
-                                          <li><a href="{{ route('about') }}">About</a></li>
-                                          <li><a href="{{ route('treatments') }} ">Study Tips</a></li>
-                                          <li><a href="{{ route('treatments') }} ">Visual Acuity Chart</a></li>
-                                          <li><a href="{{ route('treatments') }} ">Treatments</a></li>
-                                          <li><a href="{{ route('our-doctors') }}">Our Doctors</a></li>
-                                          <li><a href="{{ route('doctor-single') }} ">Doctor Single</a></li>
-                                       </ul>
-                                    </li>
-                                    <li class="{{ Request::is('contact') ? 'active' : '' }}">
-                                       <a href="{{ route('contact') }}">Contact</a>
-                                    </li>
-                                 </ul>
-                              </div>
-                           </nav>
-                        </div>
-                        <div class="menu-right-box d-flex align-items-center">
-                           <a href="#" class="search-btn"><i class="optico-icon-search-1"></i></a>
-                           <div class="header-button">
-                              <a href="#" class="btn btn-outline">APPOINTMENT</a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+                    </div>
+                </div>
             </div>
-         </div>
+        </div>
       </header>
       <!-- Header Main Area End Here -->

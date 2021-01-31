@@ -30,8 +30,13 @@ app.use(express.static(path.join(__dirname, "public")));
 
 app.use(logger("dev"))
 
-const index = require('./routes/index');
+const index = require('./routes/index')
+const auth = require('./routes/auth')
+const admin = require('./routes/admin')
+
 app.use(index);
+app.use(auth);
+app.use(admin);
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
