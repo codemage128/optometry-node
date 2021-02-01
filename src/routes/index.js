@@ -15,5 +15,4 @@ router.get('/contact-us', async(req, res, next) => {
    res.render('contact');
 })
 
-
 module.exports = router;
